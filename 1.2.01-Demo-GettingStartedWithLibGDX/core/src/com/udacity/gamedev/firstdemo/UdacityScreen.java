@@ -21,6 +21,7 @@ public class UdacityScreen extends InputAdapter implements Screen {
 
     private static final Color UDACITY_ORANGE = new Color(228.0f / 225.0f, 127.0f / 225.0f, 57.0f / 225.0f, 1.0f);
     private static final Color UDACITY_BLUE = new Color(36.0f / 225.0f, 73.0f / 225.0f, 96.0f / 225.0f, 1.0f);
+    private static final Color ISAAC_CUSTOM = new Color(75.0f / 225.0f, 82.0f / 225.0f, 41.0f / 225.0f, 1.0f);
     private static final float LOGO_WIDTH = 200.0f;
     private float logoHeight;
 
@@ -41,7 +42,8 @@ public class UdacityScreen extends InputAdapter implements Screen {
     public void render(float delta) {
 
         // TODO: Make this UDACITY_BLUE instead
-        clearScreen(UDACITY_ORANGE);
+        clearScreen(UDACITY_BLUE);
+
 
         batch.begin();
         batch.draw(logo,
